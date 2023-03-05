@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Bookmark landing page</title>
+
+    <style>
+      body {
+        font-family: "Rubik", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--=============================== header ===============================-->
+    <header>
+      <div class="logo">
+        <img src="./images/logo-bookmark.svg" alt="Bookmark" />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">FEATURES</a></li>
+          <li><a href="#">PRICING</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a class="login" href="#">LOGIN</a></li>
+        </ul>
+      </nav>
+
+      <div class="icon-hamburger">
+        <img src="./images/icon-hamburger.svg" alt="hamburger">
+      </div>
+    </header>
+
+    <main>
+      <!--=============================== hero ===============================-->
+      <section class="hero">
+        <div class="text">
+          <h1>A Simple Bookmark Manager</h1>
+          <p>
+            A clean and simple interface to organize your favourite websites.
+            Open a new browser tab and see your sites load instantly. Try it for
+            free.
+          </p>
+          <div class="buttons">
+            <button class="chrome">Get it on Chrome</button>
+            <button class="firefox">Get it on Firefox</button>
+          </div>
+        </div>
+        <div class="image">
+          <img src="./images/illustration-hero.svg" alt="hero" />
+        </div>
+      </section>
+      <!--=============================== features ===============================-->
+      <section class="features">
+        <div class="text">
+          <h2>Features</h2>
+          <p>
+            Our aim is to make it quick and easy for you to access your
+            favourite websites. Your bookmarks sync between your devices so you
+            can access them on the go.
+          </p>
+        </div>
+        <div class="tabs">
+          <div class="buttons">
+            <button>Simple Bookmarking</button>
+            <button>Speedy Searching</button>
+            <button>Easy Sharing</button>
+          </div>
+          <div class="tab one">
+            <div class="image">
+              <img
+                src="./images/illustration-features-tab-1.svg"
+                alt="illustration-features-tab-1"
+              />
+            </div>
+            <div class="text-tab">
+              <h3>Bookmark in one click</h3>
+              <p>
+                Organize your bookmarks however you like. Our simple
+                drag-and-drop interface gives you complete control over how you
+                manage your favourite sites.
+              </p>
+              <a href="#">More Info</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--=============================== download ===============================-->
+      <section class="download">
+        <div class="text">
+          <h2>Download the extension</h2>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if
+            you’ve got a favourite you’d like us to prioritize.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="grid-item one">
+            <div class="icon">
+              <img src="./images/logo-chrome.svg" alt="Chrome" />
+            </div>
+            <h3>Add to Chrome</h3>
+            <p>Minimum version 62</p>
+            <div class="dots">
+              <img src="./images/bg-dots.svg" alt="dots" />
+            </div>
+            <a href="#">Add & Install Extension</a>
+          </div>
+
+          <div class="grid-item two">
+            <div class="icon">
+              <img src="./images/logo-firefox.svg" alt="firefox" />
+            </div>
+            <h3>Add to Firefox</h3>
+            <p>Minimum version 55</p>
+            <div class="dots">
+              <img src="./images/bg-dots.svg" alt="dots" />
+            </div>
+            <a href="#">Add & Install Extension</a>
+          </div>
+
+          <div class="grid-item three">
+            <div class="icon">
+              <img src="./images/logo-opera.svg" alt="opera" />
+            </div>
+            <h3>Add to Opera</h3>
+            <p>Minimum version 46</p>
+            <div class="dots">
+              <img src="./images/bg-dots.svg" alt="dots" />
+            </div>
+            <a href="#">Add & Install Extension</a>
+          </div>
+        </div>
+      </section>
+      <!--=============================== faq ===============================-->
+      <section class="faq">
+        <div class="text">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Here are some of our FAQs. If you have any other questions you’d
+            like answered please feel free to email us.
+          </p>
+        </div>
+        <div class="questions">
+          <div class="p-and-arrow">
+            <p>What is Bookmark?</p>
+            <div class="arrow">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <hr />
+          <div class="p-and-arrow">
+            <p>How can I request a new browser?</p>
+            <div class="arrow">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <hr />
+          <div class="p-and-arrow">
+            <p>Is there a mobile app?</p>
+            <div class="arrow">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+          <hr />
+          <div class="p-and-arrow">
+            <p>What about other Chromium browsers?</p>
+            <div class="arrow">
+              <img src="./images/icon-arrow.svg" alt="arrow" />
+            </div>
+          </div>
+        </div>
+        <a href="#">More Info</a>
+      </section>
+      <!--=============================== stay ===============================-->
+      <section class="stay">
+        <div class="text">
+          <p>35,000+ ALREADY JOINED</p>
+          <h3>Stay up-to-date with what we’re doing</h3>
+        </div>
+        <form action="#">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+          />
+          <input type="submit" value="Contact Us" />
+        </form>
+      </section>
+    </main>
+    <!--=============================== footer ===============================-->
+    <footer>
+      <div class="logo">
+        <img src="./images/logo-light.svg" alt="logo" />
+      </div>
+
+      <ul class="links">
+        <li><a href="#">FEATURES</a></li>
+        <li><a href="#">PRICING</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+
+      <ul class="social-media">
+        <li><img src="./images/icon-facebook.svg" alt="facebook" /></li>
+        <li><img src="./images/icon-twitter.svg" alt="twitter" /></li>
+      </ul>
+    </footer>
+    <!-- Answer 1 -->
+    <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt
+    justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare
+    mattis. -->
+
+    <!-- Answer 2 -->
+    <!-- Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet
+    convallis ultricies. Mauris augue massa, ultricies non ligula. Suspendisse
+    imperdie tVivamus luctus eros aliquet convallis ultricies. Mauris augue
+    massa, ultricies non ligula. Suspendisse imperdiet. -->
+
+    <!-- Answer 3 -->
+    <!-- Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum
+    dolor, ut condimentum urna vulputate eget. Cras in ligula quis est pharetra
+    mattis sit amet pharetra purus. Sed sollicitudin ex et ultricies bibendum. -->
+
+    <!-- Answer 4 -->
+    <!-- Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at
+    euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut
+    velit. -->
+
+    <script src="main.js"></script>
+  </body>
+</html>

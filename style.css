@@ -1,0 +1,547 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/*##### for-phone-only ##########*/
+@media (max-width: 599px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem 2rem 5rem 2rem;
+  }
+  header .logo {
+    height: 25px;
+    width: 149px;
+  }
+  header ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+  header ul li + li {
+    margin-left: 3rem;
+  }
+  header ul li a {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: right;
+    letter-spacing: 1.5px;
+    color: #242a45;
+  }
+  header ul .login {
+    color: #ffffff;
+    background: #fa5959;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 40px;
+    width: 111px;
+  }
+  header .icon-hamburger {
+    height: 15px;
+    width: 18px;
+  }
+  main .hero {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main .hero .text {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .hero .text h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.09375px;
+    color: #242a45;
+    margin-bottom: 16px;
+    max-width: 280px;
+  }
+  main .hero .text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    max-width: 280px;
+  }
+  main .hero .text .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 32px;
+  }
+  main .hero .text .buttons .chrome {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 48px;
+    width: 151px;
+  }
+  main .hero .text .buttons .firefox {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.75;
+    background: #f7f7f7;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 48px;
+    width: 146px;
+  }
+  main .hero .image {
+    margin-bottom: 48px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .features .text {
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 140px;
+  }
+  main .features .text h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.075px;
+    color: #242a45;
+  }
+  main .features .text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  main .features .tabs {
+    margin-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .features .tabs .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .features .tabs .buttons button + button {
+    margin-top: 20px;
+  }
+  main .features .tabs .buttons button {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.533333px;
+    color: #242a45;
+    opacity: 0.75;
+    width: 100%;
+  }
+  main .features .tabs .tab {
+    margin-top: 72px;
+  }
+  main .features .tabs .tab .image {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  main .features .tabs .tab .text-tab {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .features .tabs .tab .text-tab h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    text-align: center;
+    letter-spacing: -0.075px;
+    color: #242a45;
+  }
+  main .features .tabs .tab .text-tab p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  main .features .tabs .tab .text-tab a {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 48px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .download {
+    margin-top: 77px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .download .text {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  main .download .text h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 52px;
+    /* identical to box height, or 217% */
+    text-align: center;
+    letter-spacing: -0.075px;
+    color: #242a45;
+  }
+  main .download .text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  main .download .grid {
+    padding: 2.5rem 2.9375rem 0rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .download .grid .grid-item + .grid-item {
+    margin-top: 40px;
+  }
+  main .download .grid .grid-item {
+    background: #ffffff;
+    box-shadow: 0px 10px 20px -5px rgba(73, 93, 207, 0.20012);
+    border-radius: 15px;
+    padding: 3.0625rem 0.125rem 1.5rem 0.125rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .download .grid .grid-item .icon {
+    height: 100px;
+    width: 105px;
+    margin-bottom: 32px;
+  }
+  main .download .grid .grid-item h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #242a45;
+    margin-bottom: 6px;
+  }
+  main .download .grid .grid-item p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    /* identical to box height, or 187% */
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-bottom: 32px;
+  }
+  main .download .grid .grid-item .dots {
+    height: 4px;
+    width: 284px;
+    margin-bottom: 24px;
+  }
+  main .download .grid .grid-item a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    text-align: center;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 48px;
+    width: 232px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8.75rem 2rem 7.6875rem 2rem;
+  }
+  main .faq .text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .faq .text h2 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 30px;
+    /* or 125% */
+    text-align: center;
+    letter-spacing: -0.075px;
+    color: #242a45;
+    margin-bottom: 16px;
+    max-width: 280px;
+  }
+  main .faq .text p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    /* or 167% */
+    text-align: center;
+    color: #242a45;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+  }
+  main .faq .questions {
+    margin-top: 64px;
+    margin-bottom: 48px;
+  }
+  main .faq .questions .p-and-arrow {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  main .faq .questions .p-and-arrow p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 32px;
+    /* identical to box height, or 213% */
+    color: #242a45;
+  }
+  main .faq .questions .p-and-arrow .arrow {
+    height: 8px;
+    width: 16px;
+  }
+  main .faq .questions hr {
+    border-top: 0.5px solid hsla(229, 31%, 21%, 0.15);
+  }
+  main .faq a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
+    letter-spacing: 0.25px;
+    color: #ffffff;
+    background: #5267df;
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    border-radius: 5px;
+    height: 48px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  main .stay {
+    padding: 3.75rem 2rem;
+    background: #5267df;
+  }
+  main .stay .text {
+    margin-bottom: 32px;
+  }
+  main .stay .text p {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 40px;
+    /* identical to box height, or 333% */
+    text-align: center;
+    letter-spacing: 4.61539px;
+    color: #ffffff;
+  }
+  main .stay .text h3 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    /* or 117% */
+    text-align: center;
+    letter-spacing: -0.075px;
+    color: #ffffff;
+  }
+  main .stay form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .stay form input {
+    border-radius: 5px;
+    height: 48px;
+    width: 311px;
+  }
+  main .stay form input[type=email] {
+    background: #ffffff;
+    margin-bottom: 16px;
+    padding-left: 20px;
+  }
+  main .stay form ::-moz-placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.25px;
+    color: rgba(36, 42, 69, 0.250109);
+  }
+  main .stay form ::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 28px;
+    /* identical to box height, or 200% */
+    letter-spacing: 0.25px;
+    color: rgba(36, 42, 69, 0.250109);
+  }
+  main .stay form input[type=submit] {
+    box-shadow: 0px 8px 8px -4px rgba(73, 93, 207, 0.20012);
+    background: #fa5959;
+    color: white;
+  }
+  footer {
+    padding: 2.5rem 7.0625rem 2.6875rem 7.125rem;
+    background: #242a45;
+  }
+  footer .logo {
+    height: 25px;
+    width: 148px;
+    margin-bottom: 39px;
+  }
+  footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 48px;
+  }
+  footer .links li + li {
+    margin-top: 32px;
+  }
+  footer .links li a {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    /* identical to box height, or 113% */
+    text-align: right;
+    letter-spacing: 1.73077px;
+    color: #ffffff;
+  }
+  footer .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  footer .social-media li {
+    height: 24px;
+    width: 24px;
+  }
+}
+/*############ for-tablet-portrait-up ##############*/
+/*############ for-tablet-landscape-up #############*/
+/*############ for-desktop-up ###########*/
+/*############ for-big-desktop-up ##########*//*# sourceMappingURL=style.css.map */
